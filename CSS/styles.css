@@ -26,6 +26,17 @@
     color: var(--white);
 }
 
+.nav-link a {
+    color: var(--white);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    font-family: "Hind", sans-serif;
+    text-transform: uppercase;
+    margin-right: 2.5rem;
+    line-height: 1.25rem;
+    color: var(--white);
+}
+
 .bg-header {
     background-image: url(../assets/images/bg-header-1.jpg);
     background-color: var(--footer);
@@ -54,12 +65,6 @@
     content: "";
 }
 
-.nav-link a {
+.hero-header {
     color: var(--white);
-    font-size: 0.8125rem;
-    font-weight: 600;
-    font-family: "Hind", sans-serif;
-    text-transform: uppercase;
-    margin-right: 2.5rem;
-    line-height: 1.25rem;
 }
