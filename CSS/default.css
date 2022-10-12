@@ -65,6 +65,10 @@ img {
     border-style: none;
 }
 
+footer {
+    background-color: var(--footer);
+}
+
 .container {
     width: 100%;
     padding-left: 15px;
@@ -102,11 +106,7 @@ img {
     box-shadow: 0px 10px 20px rgba(255,255,255, 0.35);
     padding: 0.475rem 1.75rem;
 }
-
-
-
-
-
+/*Media Rules*/
 @media(min-width: 1200px) {
     .container { max-width: 1140px; }
 }
