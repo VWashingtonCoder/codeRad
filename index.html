@@ -23,7 +23,7 @@
   <body>
     <div id="pageTop"></div>
     <!-- Navbar -->
-    <nav class="navbar nav">
+    <nav id="topNav" class="navbar nav">
       <div class="container">
         <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
           <span>&#9776;</span>
@@ -373,5 +373,27 @@
     </footer>
     <!-- Scroll To Top Button -->
     <a id="scrollUp" href="#pageTop"><i class="fa-solid fa-arrow-up"></i></a>
+  
+    <script>
+      const nav = document.getElementById("topNav");
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      }
+
+
+
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded = target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+
+      navButton.addEventListener("click", toggleNav);
+    </script>
   </body>
 </html>
